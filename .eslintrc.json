@@ -25,6 +25,7 @@
     "prettier/prettier": [
       2,
       {
+        "arrowFunctionParenthesis": true,
         "singleQuote": true,
         "semi": true,
         "bracketSpacing": true,
