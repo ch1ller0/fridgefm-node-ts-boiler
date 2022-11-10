@@ -17,6 +17,7 @@
     "noFallthroughCasesInSwitch": true,
     "importsNotUsedAsValues": "error",
     "noUncheckedIndexedAccess": true,
+    "useUnknownInCatchVariables": true,
 
     /* Debugging Options */
     "traceResolution": false,

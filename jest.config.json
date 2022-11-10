@@ -3,18 +3,15 @@
     "<rootDir>/src"
   ],
   "transform": {
-    "^.+\\.ts$": "ts-jest"
+    "^.+\\.ts$": ["ts-jest", {
+      "isolatedModules": true,
+      "tsconfig": "tsconfig.dev.json",
+      "diagnostics": false
+    }]
   },
   "testRegex": "(test|spec)\\.[jt]sx?$",
   "collectCoverageFrom": [
     "src/**/*.ts"
   ],
-  "globals": {
-    "ts-jest": {
-      "isolatedModules": true,
-      "tsconfig": "tsconfig.dev.json",
-      "diagnostics": false
-    }
-  },
   "verbose": true
 }
