@@ -1,20 +1,22 @@
 {
   "name": "@fridgefm/your-project",
   "version": "0.0.1",
-  "description": "",
+  "description": "A simple template for a library with built-in ts, jest, eslint, prettier support",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "module": "lib/index.js",
   "license": "MIT",
+  "type": "module",
   "keywords": [],
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc --watch",
     "start": "tsnd src/index.ts",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
     "test": "yarn test:lint && yarn test:types && yarn test:unit",
     "test:lint": "eslint --ext .js,.ts ./src",
     "test:types": "tsc --noEmit",
-    "test:unit": "jest"
+    "test:unit": "jest",
+    "test:unit:watch": "jest --watch"
   },
   "devDependencies": {
     "@types/jest": "^29.2.5",
