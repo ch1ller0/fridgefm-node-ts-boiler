@@ -1,0 +1,34 @@
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+    - main
+
+name: Push or PR 
+
+jobs:
+  sbt:
+    name: Setup, build and test
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 2
+    - name: Use Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18.x
+        cache: 'yarn'
+    - name: Install deps
+      run: yarn install
+    - name: Building packages
+      run: yarn build
+    - name: Unit testing
+      run: yarn test:unit
+    - name: ESLint
+      run: yarn test:lint
+    - name: Type checking
+      run: yarn test:types
