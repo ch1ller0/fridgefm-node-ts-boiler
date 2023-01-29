@@ -4,7 +4,7 @@
     "outDir": "lib",
     "rootDir": "src",
     "moduleResolution": "node",
-    "module": "commonjs",
+    "module": "esnext",
     "declaration": true,
     "inlineSourceMap": true,
     "esModuleInterop": true,
@@ -35,8 +35,5 @@
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules/**", "**/__tests__/"],
-  "compileOnSave": false,
-  "ts-node": {
-    "transpileOnly": true
-  }
+  "compileOnSave": false
 }

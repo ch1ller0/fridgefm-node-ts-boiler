@@ -5,7 +5,7 @@ A simple template for a library with built-in ts, jest, eslint, prettier support
 All these features are preconfigured and you are ready to go
 
 - [Typescript@4.9](https://devblogs.microsoft.com/typescript/announcing-typescript-4-9/) for static typing
-- [Ts-node-dev@2.0](https://github.com/wclr/ts-node-dev#readme) for faster local dev
+- [Tsx@3.12.2](https://github.com/esbuild-kit/tsx#tsx---) for faster local dev
 - [Jest@29.3](https://jestjs.io/) for unit testing
 - [Eslint@8.31](https://eslint.org/) for code linting with recommended rules
 - [Prettier@2.8](https://prettier.io/) for code formatting with recommended rules
