@@ -1,4 +1,4 @@
-export interface CurriedSum {
+export type CurriedSum = {
   (nextnum?: never): number;
   (nextnum: number): CurriedSum;
-}
+};

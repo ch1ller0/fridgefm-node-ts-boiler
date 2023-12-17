@@ -1,18 +1,25 @@
 module.exports = {
-  extends: ['airbnb-typescript/base', 'plugin:prettier/recommended'],
+  extends: [
+    'eslint:recommended',
+    'airbnb-typescript/base',
+    'plugin:prettier/recommended',
+    'plugin:import/recommended',
+    'plugin:@typescript-eslint/recommended',
+  ],
   plugins: ['import', 'prettier'],
+  env: { node: true },
   parserOptions: {
     project: './tsconfig.dev.json',
   },
   rules: {
-    'class-methods-use-this': 0,
-    'default-case': 0,
     'no-console': 2,
-    'no-param-reassign': 0,
-    'no-underscore-dangle': 0,
     'prefer-destructuring': 1,
+    '@typescript-eslint/consistent-type-imports': [
+      2,
+      { prefer: 'type-imports', fixStyle: 'inline-type-imports' },
+    ],
+    '@typescript-eslint/consistent-type-definitions': [2, 'type'],
     '@typescript-eslint/no-explicit-any': 2,
-    'import/extensions': 0,
     'import/no-default-export': 2,
     'import/no-extraneous-dependencies': 2,
     'import/order': [
