@@ -4,11 +4,11 @@ A simple template for a library with built-in ts, jest, eslint, prettier support
 # Built-in features
 All these features are preconfigured and you are ready to go
 
-- [Typescript@4.9](https://devblogs.microsoft.com/typescript/announcing-typescript-4-9/) for static typing
-- [Tsx@3.12.2](https://github.com/esbuild-kit/tsx#tsx---) for faster local dev
-- [Jest@29.3](https://jestjs.io/) for unit testing
-- [Eslint@8.31](https://eslint.org/) for code linting with recommended rules
-- [Prettier@2.8](https://prettier.io/) for code formatting with recommended rules
+- [Typescript@5](https://devblogs.microsoft.com/typescript/announcing-typescript-5-3/) for static typing
+- [Tsx@4](https://github.com/esbuild-kit/tsx#tsx---) for faster local dev
+- [Jest@29](https://jestjs.io/) for unit testing
+- [Eslint@8](https://eslint.org/) for code linting with recommended rules
+- [Prettier@3](https://prettier.io/) for code formatting with recommended rules
 - Github templates for issue/pr/contributing
 - Useful [package.json scripts]
 - Simple example of usage
