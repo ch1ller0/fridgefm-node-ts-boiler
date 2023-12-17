@@ -14,12 +14,13 @@ module.exports = {
   rules: {
     'no-console': 2,
     'prefer-destructuring': 1,
+    '@typescript-eslint/consistent-type-definitions': [2, 'type'],
     '@typescript-eslint/consistent-type-imports': [
       2,
       { prefer: 'type-imports', fixStyle: 'inline-type-imports' },
     ],
-    '@typescript-eslint/consistent-type-definitions': [2, 'type'],
     '@typescript-eslint/no-explicit-any': 2,
+    'import/extensions': ['error', 'ignorePackages', { '': 'never', ts: 'never', tsx: 'never' }],
     'import/no-default-export': 2,
     'import/no-extraneous-dependencies': 2,
     'import/order': [
@@ -40,5 +41,11 @@ module.exports = {
         trailingComma: 'all',
       },
     ],
+  },
+  settings: {
+    // https://github.com/import-js/eslint-plugin-import/issues/1573#issuecomment-565973643
+    'import/resolver': {
+      node: { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
+    },
   },
 };
