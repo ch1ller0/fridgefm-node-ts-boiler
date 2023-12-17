@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import type { CurriedSum } from './types/main';
+import { type CurriedSum } from './types/main';
 
 const curriedSum = (num: number): CurriedSum => {
   const func = (nextnum?: number) => {

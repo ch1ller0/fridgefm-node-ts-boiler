@@ -1,4 +1,13 @@
 {
-    "extends": "./tsconfig.json",
-    "exclude": []
+  "extends": "./tsconfig.json",
+  "include": [
+    "**/*.ts",
+    "**/*.js",
+    ".eslintrc.cjs",
+    "jest.config.cjs"
+  ],
+  "exclude": [
+    "node_modules/**",
+    "lib"
+  ]
 }

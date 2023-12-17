@@ -5,15 +5,15 @@
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "module": "lib/index.js",
-  "license": "MIT",
   "type": "module",
+  "license": "MIT",
   "keywords": [],
   "scripts": {
     "start": "tsx watch ./src/",
     "build": "tsc",
     "build:watch": "tsc --watch",
     "test": "npm run test:lint && npm run test:types && npm run test:unit",
-    "test:lint": "eslint --ext .js,.ts ./src",
+    "test:lint": "eslint -c .eslintrc.cjs",
     "test:types": "tsc --noEmit",
     "test:unit": "jest",
     "test:unit:watch": "jest --watch"
