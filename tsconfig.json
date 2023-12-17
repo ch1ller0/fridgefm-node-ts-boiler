@@ -51,12 +51,15 @@
     /* Completeness */
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },
+  "ts-node": {
+    "moduleTypes": {
+      "jest.config.ts": "cjs"
+    }
+  },
   "include": [
-    "**/*.ts",
-    "**/*.js"
+    "src/**/*.ts",
   ],
   "exclude": [
-    "node_modules/**",
     "**/__tests__/"
   ]
 }

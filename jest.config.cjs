@@ -1,6 +1,4 @@
-import type { Config } from 'jest';
-
-const config: Config = {
+module.exports = {
   roots: ['<rootDir>/src'],
   transform: {
     '^.+\\.ts$': [
@@ -16,6 +14,3 @@ const config: Config = {
   collectCoverageFrom: ['src/**/*.ts'],
   verbose: true,
 };
-
-// eslint-disable-next-line import/no-default-export
-export default config;
